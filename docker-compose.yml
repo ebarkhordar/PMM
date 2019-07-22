@@ -14,7 +14,7 @@ services:
     ports:
       - "5432:5432"
   web_pmm:
-    image: barkhordar/web_pmm:0.0-1
+    image: barkhordar/web_pmm:0.0-12
     container_name: web_pmm
     restart: always
     environment:
