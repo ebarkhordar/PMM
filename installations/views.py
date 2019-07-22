@@ -1,10 +1,10 @@
 from random import randint
 
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, get_object_or_404, get_list_or_404
+from django.shortcuts import render
 
 # Create your views here.
-from django.http import HttpResponseRedirect, Http404
+from django.http import *
 from django.utils import timezone
 from installations.forms import DeviceForm, EditDeviceForm
 from django.utils.timezone import activate
@@ -71,7 +71,10 @@ def edit_device(request, code):
             device.operator_name = request.user
             device.datetime = timezone.now()
             device.save()
-            return HttpResponseRedirect('/')
+            return render(request, 'installations/success.html')
+        else:
+            return render(request, 'installations/failure.html')
+
     else:
         form = EditDeviceForm()
     return render(request, 'installations/edit_device.html', {'form': form,
