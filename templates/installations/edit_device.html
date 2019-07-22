@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>نام اپراتور: {{ user.first_name }} {{ user.last_name }}</h2>
+    <h2>ثبت وضعیت دستگاه {{ device_code }}</h2>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">تایید و ارسال</button>
+    </form>
+{% endblock %}

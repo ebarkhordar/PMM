@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if device.published_date %}
+            <div class="date">
+                {{ device.published_date }}
+            </div>
+        {% endif %}
+        <a class="btn btn-default" href="{% url 'edit_device' pk=device.id %}"><span
+                class="glyphicon glyphicon-pencil"></span></a>
+        <h2>{{ device.title }}</h2>
+        <p>{{ device.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}

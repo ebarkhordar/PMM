@@ -1,0 +1,54 @@
+<!--doctype HTML-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+
+</head>
+<body>
+
+
+<h2>New Device</h2>
+<form method="POST" class="post-form">
+    <input type="hidden" name="csrfmiddlewaretoken"
+           value="pDBueQF73s5N79pAiHtFKGdHn3Yc8RogRq28cSpPoE5PUz4OWgzcmLqT8i9mvQvU">
+    <p><label for="id_code">Code:</label> <input type="number" name="code" required id="id_code"></p>
+    <p><label for="id_device_hour">Device hour:</label> <input type="number" name="device_hour" required
+                                                               id="id_device_hour"></p>
+    <p><label for="id_voltage_l1">Voltage l1:</label> <input type="number" name="voltage_l1" required
+                                                             id="id_voltage_l1"></p>
+    <p><label for="id_voltage_l2">Voltage l2:</label> <input type="number" name="voltage_l2" required
+                                                             id="id_voltage_l2"></p>
+    <p><label for="id_voltage_l3">Voltage l3:</label> <input type="number" name="voltage_l3" required
+                                                             id="id_voltage_l3"></p>
+    <p><label for="id_hertz">Hertz:</label> <input type="number" name="hertz" required id="id_hertz"></p>
+    <p><label for="id_amper_l1">Amper l1:</label> <input type="number" name="amper_l1" required id="id_amper_l1"></p>
+    <p><label for="id_amper_l2">Amper l2:</label> <input type="number" name="amper_l2" required id="id_amper_l2"></p>
+    <p><label for="id_amper_l3">Amper l3:</label> <input type="number" name="amper_l3" required id="id_amper_l3"></p>
+    <p><label for="id_kw">Kw:</label> <input type="number" name="kw" required id="id_kw"></p>
+    <p><label for="id_oil_pressure">Oil pressure:</label> <input type="number" name="oil_pressure" required
+                                                                 id="id_oil_pressure"></p>
+    <p><label for="id_water_temperature">Water temperature:</label> <input type="number" name="water_temperature"
+                                                                           required id="id_water_temperature"></p>
+    <p><label for="id_battery_voltage">Battery voltage:</label> <input type="number" name="battery_voltage" required
+                                                                       id="id_battery_voltage"></p>
+    <p><label for="id_power_meter_number">Power meter number:</label> <input type="number" name="power_meter_number"
+                                                                             required id="id_power_meter_number"></p>
+    <p><label for="id_gasoline_liters">Gasoline liters:</label> <input type="number" name="gasoline_liters" required
+                                                                       id="id_gasoline_liters"></p>
+    <button type="submit" class="save btn btn-default">Save</button>
+</form>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
+

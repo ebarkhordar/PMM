@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'yekan';
+    src: url(fonts/yekan/Yekan.eot);
+    src: url(fonts/yekan/Yekan.eot?#iefix) format("embedded-opentype"), url(fonts/yekan/Yekan.woff)
+    format("woff"), url(fonts/yekan/Yekan.ttf) format("truetype"), url(fonts/yekan/Yekan.svg#BYekan) format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "yekan"}
+body, html {
+    height: 100%;
+    color:#777;
+    line-height: 0px;
+}
+
+body {
+    background-image: linear-gradient(#f0f5f5,#ffffff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.top-image  {
+    text-align: center;
+}
+
+.pars-system-logo {
+    display: inline;
+    margin: 6%;
+}
+
+.pars-system-logo  img {
+    width: 80px;
+    height: auto;
+    padding: 15px 15px;
+    }
+
+.iranmall-logo {
+    display: inline;
+    margin: 6%;
+}
+
+.iranmall-logo img {
+    width: 80px;
+    height: auto;
+}
+
+.form   {
+    margin-right: 5%;
+}
+
+
+.head   h2{
+text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.title    {
+    margin-top: 40px;
+}
+
+input {
+    border: 1px solid #669999;
+    border-radius: 6px;
+    padding: 4px;
+    box-shadow:  0 0 8px rgba(0, 0, 0, 0.2);
+    transition: all 200ms ease-out;
+}
+
+textarea    {
+    border: 1px solid #669999;
+    border-radius: 6px;
+    padding: 4px;
+    box-shadow:  0 0 8px rgba(0, 0, 0, 0.2);
+    transition: all 200ms ease-out;
+    font-family: IRYekan;
+    font-size: 12px;
+}
+
+.submit {
+    margin: 30px;
+    text-align: left;
+}
+
+.submit_button {
+    padding: 5px 50px 5px 50px;
+}
+
+.sub-form    {
+    margin-right: 14%;
+    margin-top: 10px;
+}
+
+.sub-title {
+    margin: 10px;
+}

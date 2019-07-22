@@ -1,0 +1,33 @@
+version: '3'
+services:
+  pg_pmm:
+    image: postgres:9.5
+    container_name: pg_pmm
+    restart: always
+    environment:
+      - POSTGRES_DB=my_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=dwQ12@i23H4
+      - TZ=Asia/Tehran
+    volumes:
+      - ./pg_pmm/postgres/:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+  web_pmm:
+    image: barkhordar/web_pmm:0.0-1
+    container_name: web_pmm
+    restart: always
+    environment:
+      #PostgreSQL Config
+      - POSTGRES_DB=my_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=dwQ12@i23H4
+      - POSTGRES_HOST=pg_pmm
+      - POSTGRES_PORT=5432
+      #Config
+      - DEBUG_MODE=1
+      - ALLOWED_HOSTS=94.182.191.210
+    ports:
+      - "8000:8000"
+    depends_on:
+      - pg_pmm
